@@ -1,0 +1,54 @@
+@import "variables";
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 17px;
+  background-color: rgba(0, 0, 0, 0.5);
+  .logo {
+    font-size: 33px;
+    color: $textColor;
+    font-weight: 700;
+    span {
+      color: $mainColor;
+    }
+  }
+  .navbar {
+    display: flex;
+    a {
+      color: $textColor;
+      font-size: $pFont;
+      font-weight: 500;
+      margin: 15px 22px;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+  .header-right {
+    display: flex;
+    align-items: center;
+    a {
+      color: $textColor;
+      margin-right: 20px;
+      font-size: 20px;
+      transition: all 0.5s ease;
+      &:hover {
+        transform: translateY(-3px);
+        color: $mainColor;
+      }
+    }
+    a:nth-child(1) {
+      font-size: $pFont;
+      margin-right: 20px;
+    }
+  }
+}
